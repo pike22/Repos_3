@@ -114,4 +114,19 @@ many. If you want to run the code run the alpha.py file.
 	now handle collision between up to 4 objects. While working on the collision I had to re-work my almost all of my lvlDesigner folder.
 	This was due to an inefficient method of saving images to classes.
 		Now I can handle: multiple objects in one collision, multiple different groups of collision at once, more interactions between players/enemies
-								full map design capabilities, and a smooth render of the maps I create w/ working collision. 
+								full map design capabilities, and a smooth render of the maps I create w/ working collision.
+
+
+
+ -06/13/23 (Remember when) Version [v0.3.0]
+ 	For the first time in almost 2 years I am going to begin work on this project once more. I made myself a todo list that probably won't get completed
+	before I find new problems or have to push some of the items back. For right now I have the list as follows:
+			Fix Collision
+			Improve AI movement
+			Fix weapon knockback (if this is even still broken)
+			Fix lvlDesigner
+			Animation
+	The animation probably won't be anytime soon, it just finds a way to get pushed back further. On top of remembering what I did 2 years ago I need
+	to go and generate an actual plan for what I want this game to be. So far I have just been working on fundamental building blocks for the game.
+
+	

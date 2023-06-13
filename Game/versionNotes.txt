@@ -1,9 +1,9 @@
 Current Game Version
-		[v0.2.959]
+		[v0.3.0]
 
 
  ** Last Update Note:
- 		Collision: Collision Re-work
-			All that is left is to fix that stupid double bounce when colliding based on the directions. Most
-			likely due to how I determine the directions. Once that is done the Collision re-work is mostly done.
-			There is still setting it up for the other entities, and then to remember the main reason for the re-work.
+	Continued work on collision. Got it "working" as in now I can slide along walls with out clipping through them, unless you are sliding up and down the wall.
+	Then clipping occurs, sliding left and right along the wall works fine until you get to the edge of said wall. Multiple object collision half works.
+	I think I cheated the system on it to be honest.
+	

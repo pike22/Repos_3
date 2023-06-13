@@ -27,7 +27,7 @@ class GUI_Main():
 		#Frame Vars
 		self.__imageList= None
 
-		self.__defultButtons = 'E:\Github\Repos_2\Game\LevelDesigner\ButtonSet_Files\Test1.txt'
+		self.__defultButtons = 'E:\Github\Repos_3\Game\LevelDesigner\ButtonSet_Files\Test1.txt'
 		#Button Vars
 		self.__import	 = None
 		self.__delKEY	 = None

@@ -83,8 +83,8 @@ class Entity_Main(Main_Node):
 			#__Other Side Collision: Static__#
 			elif OSC == 'Static':
 				self.__isStatic = True
-				print(self._lastDir)
-				print(side)
+				# print(self._lastDir, 'last direction move?')
+				# print(side, 'pushing')
 				for direction in self._lastDir:
 					if direction == 'up':
 						direction = 'down'

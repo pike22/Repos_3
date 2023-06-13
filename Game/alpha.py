@@ -40,9 +40,9 @@ class Alpha():
 		# self.__cLogic	= Collision_Logic() #cLogic has to be made before other Game_Classes.
 		self.__cLogic_v2= Collision_Logic_v2()
 		# self.__cNode	= Collision_Node(self.__cLogic)
-		self.__cNode_v2 = Collision_Node_v2(self.__cLogic_v2)
 		self.__iNode	= Image_Node()
 		self.__tNode	= Timer_Node(self.__mainApp)
+		self.__cNode_v2 = Collision_Node_v2(self.__cLogic_v2, self.__tNode)
 		self.__pfNode	= PathFind_Node(self.__cLogic_v2, self.__cNode_v2, self.__iNode) #Path Finder
 		#__Entites__#
 		self.__Player	= Player_Main(self.__cLogic_v2, self.__iNode)
@@ -69,7 +69,7 @@ class Alpha():
 		#---Collision SETUP---#
 		#Fills out the Collision_Logic and Collision_Node Classes#
 		#__Player__#
-		self.__cLogic_v2.Add_Collision(pos=self.__Player.get_myCoords(), tag=self.__Player.get_ID(), obj=self.__Player)
+		self.__cLogic_v2.Add_Collision(pos=self.__Player.get_myCoords(), obj=self.__Player)
 		self.__playerRoster.append(self.__Player.get_ID())
 		self.__cNode_v2.set_playerRoster(self.__playerRoster)
 		#__Statics__#
@@ -98,7 +98,7 @@ class Alpha():
 		self.__cNode_v2.set_projRoster(self.__projRoster)
 
 		self.__cNode_v2.set_everyRoster(self.__everyRoster)
-		
+
 
 		#---Path Finder Setups---#
 		self.__pfNode.System_Grid()
@@ -339,7 +339,10 @@ class Alpha():
 
 
 #puts the above class to action
-print('\n<<-----Initial Set UP------>>\n') #to make it easier to read in the command promt
+print('\n\n\n')
+print('<<----------------------------->>')
+print('<<-------Initial Set UP-------->>') #to make it easier to read in the command promt
+print('<<----------------------------->>')
 Game = Alpha()
 Game.Create_MainCanvas()
 Game.Window_SetUP()

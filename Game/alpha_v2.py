@@ -49,10 +49,11 @@ class Alpha_v2():
 		self.__siFiles 		= self.__GUI.get_siFILE()
 		self.__imageDICT 	= None
 			#__Import-Maps__#
-		self.__levelONE   	= self.__Maps.get_levelONE()
-		self.__levelTWO  	= self.__Maps.get_levelTWO()
+		self.__levelONE		= self.__Maps.get_levelONE()
+		self.__levelTWO		= self.__Maps.get_levelTWO()
 		self.__levelTHREE	= self.__Maps.get_levelTHREE()
-		self.__levelFOUR  	= self.__Maps.get_levelFOUR()
+		self.__levelFOUR	= self.__Maps.get_levelFOUR()
+		self.__levelTEST	= self.__Maps.get_levelTEST()
 
 		#<--\Path Finder Setup\-->#
 		self.__pfNode.System_Grid()
@@ -81,7 +82,7 @@ class Alpha_v2():
 
 	def Game_Setup(self, showTime=False, collision_OnOff='On'):
 		self.__collision_OnOff = collision_OnOff
-		self.__siFiles.Read_File(self.__levelFOUR)
+		self.__siFiles.Read_File(self.__levelTEST)
 		self.__imageDICT = self.__siFiles.get_imageDICT()
 		# print(self.__imageDICT)
 
@@ -92,7 +93,7 @@ class Alpha_v2():
 
 		#<--\Weapon Setups\-->#
 		print("Weapons Need rework with collision")
-		print("They have anchent code.")
+		print("They have ancient code.")
 		print()
 		# self.__Sword.Sword_Setup()
 		# self.__Bow.Bow_Setup()
@@ -128,6 +129,12 @@ class Alpha_v2():
 
 		#<--\Collision\-->#
 		p_Result = self.__cLogic.Is_Collision(self.__Player.get_ID())
+		# if len(p_Result) >= 2: #finding is there is the fated double collision
+		# 	print("HELLO double COLLISION")
+		# 	print(p_Result, 'result A')
+		# elif len(p_Result) == 1:
+		# 	print('Single collision')
+		# 	print(p_Result, 'result B')
 		self.__cNode.Collision_Result(p_Result, self.__Player)
 
 		#<--\Entity\-->#
@@ -175,18 +182,26 @@ class Alpha_v2():
 
 
 
+print('\n\n')
 print('|You wanted to theroise creating functions within one of the collision classes to make setting up entities much easier|')
-print("|I hope you run this tomorrow, probably will due to writing this. DON'T FORGET, I've forgot")
-print("\n<<-----Initial Setup----->>\n")
+print("|I hope you run this tomorrow, probably will due to writing this. DON'T FORGET, I've forgot, 2 years and still forgot")
+
+print('\n\n\n')
+print('<<----------------------------->>')
+print("<<--------Initial Setup-------->>")
+print('<<----------------------------->>')
 Game = Alpha_v2()
 Game.Create_MainCanvas()
 Game.Window_Setup()
 Game.Game_Setup(False, 'On')
-print("\n<<-------Game Loop------->>\n")
+print('\n\n\n')
+print('<<----------------------------->>')
+print("<<----------Game Loop---------->>")
+print('<<----------------------------->>')
 Game.Game_Loop()
 Game.get_mainAPP().mainloop()
-print('\n')
+print('\n\n')
 print('<<----------------------------->>')
 print('<<-------------END------------->>')
 print('<<----------------------------->>')
-print('\n')
+print('\n\n')

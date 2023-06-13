@@ -1,10 +1,11 @@
 
 class Maps_GetFile():
 	def __init__(self):
-		self.__levelONE   = 'E:\Github\Repos_2\Game\LevelDesigner\MapSave_Files\levelONE.txt'
-		self.__levelTWO   = 'E:\Github\Repos_2\Game\LevelDesigner\MapSave_Files\levelTWO.txt'
-		self.__levelTHREE = 'E:\Github\Repos_2\Game\LevelDesigner\MapSave_Files\levelTHREE.txt'
-		self.__levelFOUR  = 'E:\Github\Repos_2\Game\LevelDesigner\MapSave_Files\levelFOUR.txt'
+		self.__levelONE		= 'E:\Github\Repos_3\Game\LevelDesigner\MapSave_Files\levelONE.txt'
+		self.__levelTWO		= 'E:\Github\Repos_3\Game\LevelDesigner\MapSave_Files\levelTWO.txt'
+		self.__levelTHREE	= 'E:\Github\Repos_3\Game\LevelDesigner\MapSave_Files\levelTHREE.txt'
+		self.__levelFOUR	= 'E:\Github\Repos_3\Game\LevelDesigner\MapSave_Files\levelFOUR.txt'
+		self.__levelTEST	= 'E:\Github\Repos_3\Game\LevelDesigner\MapSave_Files\Collision_test1.txt'
 
 
 	"""#|--------------Getters--------------|#"""
@@ -21,9 +22,10 @@ class Maps_GetFile():
 	def get_levelFOUR(self):
 		return self.__levelFOUR
 
-	def get_levelNUMB(self):
-		return self.__levelNUMB
+	def get_levelTEST(self):
+		return self.__levelTEST
 
+	#Un used functions
 	def get_levelNUMB(self):
 		return self.__levelNUMB
 

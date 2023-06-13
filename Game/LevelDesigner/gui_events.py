@@ -33,8 +33,8 @@ class GUI_Events():
 		self.__gridCoords	= []
 		self.__gridCorners	= []
 
-		self.__mapFiles = 'E:\Github\Repos_2\Game\levelDesigner\MapSave_Files'
-		self.__pngFiles = 'E:\Github\Repos_2\Game\z_Pictures\Walls'
+		self.__mapFiles = 'E:\Github\Repos_3\Game\levelDesigner\MapSave_Files'
+		self.__pngFiles = 'E:\Github\Repos_3\Game\z_Pictures\Walls'
 
 		'''#_IMAGE VARIABLES_#'''
 		#Button Vars

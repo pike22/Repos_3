@@ -1,6 +1,7 @@
 import re
 from .image_node import Image_Node
 
+#the brain behind Collision_Node
 class Collision_Logic_v2():
 	def __init__(self):
 		#--Collision Dictionaries--#
@@ -160,6 +161,7 @@ class Collision_Logic_v2():
 
 		returnVar = self.boxList
 		self.boxList = []
+		# print(returnVar, 'Returning Var')
 		return returnVar
 
 

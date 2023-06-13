@@ -25,9 +25,9 @@ class SI_Files():
 		self.__saveLevel	= None
 		self.__importLevel	= None
 
-		self.__mapFiles = 'E:\Github\Repos_2\Game\LevelDesigner\MapSave_Files'
-		self.__loadFile = 'E:\Github\Repos_2\Game\LevelDesigner\ButtonSet_Files'
-		self.__pngFiles = 'E:\Github\Repos_2\Game\z_Pictures\Walls'
+		self.__mapFiles = 'E:\Github\Repos_3\Game\LevelDesigner\MapSave_Files'
+		self.__loadFile = 'E:\Github\Repos_3\Game\LevelDesigner\ButtonSet_Files'
+		self.__pngFiles = 'E:\Github\Repos_3\Game\z_Pictures\Walls'
 
 		#WRITE FILE VARS
 		self.__buttonDICT = {} #this is for the buttons

@@ -22,9 +22,9 @@ class Alpha_LVD():
 
 		"""Class Call's"""
 		self.__mainApp	= Tk()
-		self.__cLogic	= Collision_Logic()
-		self.__cNode	= Collision_Node(self.__cLogic)
 		self.__tNode	= Timer_Node(self.__mainApp)
+		self.__cLogic	= Collision_Logic_v2()
+		self.__cNode	= Collision_Node_v2(self.__cLogic, self.__tNode)
 		self.__iNode	= Image_Node() #NOTHING TO NOTE
 		self.__kNode	= Kinetics_Node()
 		self.__mainMenu = Menu_Main(self.__mainApp, self.__color)
@@ -87,15 +87,24 @@ class Alpha_LVD():
 
 
 
-print('\n-------Initial Set UP--------\n')
+print('\n\n\n')
+print('<------------------------------->')
+print('<--------Initial Set UP--------->')
+print('<------------------------------->')
+
 LVD = Alpha_LVD()
 LVD.tk_windowSETUP()
 LVD.set_MainCanvas()
 LVD.GUI_run()
-print('\n-----Level Designer Loop-----\n')
+
+print('\n\n\n')
+print('<------------------------------->')
+print('<------Level Designer Loop------>')
+print('<------------------------------->')
 LVD.windowLoop()
 LVD.get_mainAPP().mainloop()
-print('\n')
+
+print('\n\n\n')
 print('<------------------------------->')
 print('<--------------END-------------->')
 print('<------------------------------->')
