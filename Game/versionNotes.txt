@@ -1,0 +1,9 @@
+Current Game Version
+		[v0.2.959]
+
+
+ ** Last Update Note:
+ 		Collision: Collision Re-work
+			All that is left is to fix that stupid double bounce when colliding based on the directions. Most
+			likely due to how I determine the directions. Once that is done the Collision re-work is mostly done.
+			There is still setting it up for the other entities, and then to remember the main reason for the re-work.
